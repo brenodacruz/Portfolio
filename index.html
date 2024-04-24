@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="https://wa.me/31996702929" target="_blank" class="breno">BRE<span class="mudando">NO</span></a>
+            <div class="menu-computador">
+                <ul>
+                    <li class="menu-opcoes inicio-en" id="inicio">Início</li>
+                    <li class="menu-opcoes sobre-en" id="sobre">Sobre mim</li>
+                    <li class="menu-opcoes" id="portfolio">Portfólio</li>
+                    <li class="menu-opcoes habilidade-en" id="habilidade">Habilidades</li>
+                    <li class="menu-opcoes contato-en" id="contato">Contato</li>
+                    <section class="alteradores">
+                        <li><section onclick="mudarmodo()" class="botao"><i class="bi bi-brightness-low-fill" id="sol"></i><i class="bi bi-moon-stars-fill" id="lua"></i></section></li>
+                        <li><section class="idioma" onclick="mudaridioma()"><img src="imagem/brasil.png" alt="" id="brasil"><img src="imagem/eua.png" alt="" id="eua"></section></li>
+                    </section>
+                    
+                </ul>
+            </div>
+    
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio-page"></section>
+        <div class="frases-inicio">
+            <div class="frases">
+                <h2 class="ola">Olá!</h2>
+                <h1 class="nome aparecido">Eu sou o Breno Henrique</h1>
+                <h1 class="nome escondido">Eu sou o Breno</h1>
+                <section class="digitador">
+                    <h3 class="desenvolvedor">Desenvolvedor</h3> <span class="digitar"></span>
+                </section>
+            </div>
+            <img src="imagem/avatar.png" alt="" class="avatar">
+            <div class="seta1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0"/>
+                  </svg>
+            </div>
+        </div>
+        
+        <section  id="aboutpage"></section>
+        
+        <div class="about">
+            <h1 class="titulo tituloroxo sobre2-en">Sobre mim</h1>
+            <img src="imagem/foto.png" alt="" class="foto">
+            <p class="paragrafo1-sobre">Sou desenvolvedor <b>front-end</b>, interessado em criar soluções inovadoras para melhorar a vida da pessoas. Atualmente, estou cursando <b>Engenharia de Software (Anhanguera)</b> e <b> Cs50 Introdução à Ciência da    Computação (Curso gratuito de Harvard)</b>. Pretendo, através dos meus conhecimentos na tecnologia ajudar a
+            vida das pessoas. Meu foco principal está voltado para o desenvolvimento web, <b>mas estou disposto a aprender e trabalhar em outras áreas e tecnologias</b>, se necessário. Sou focado naquilo que eu preciso entregar, ao mesmo tempo em que busco proporcionar a melhor experiência possível para o usuário.</p>
+            <p class="paragrafo2-sobre">Nos meus projetos, utilizo as tecnologias das quais tenho mais domínio: <b>JavaScript, HTML e CSS.</b></p>
+
+
+            <section id="portfoliopage"></section>
+        </div>
+        <div class="portfolio">
+
+            <h1 class="titulo">Portfólio</h1>
+
+            <div class="projetos">
+
+                <section class="card">
+                    <div class="card-img">
+                        <img src="imagem/nike.png" alt="" class="img-portfolio">
+                    </div>
+                    <h2 class="tituloroxo site-nike">Site da Nike</h2>
+                    <p class="paragrafo1-nike">O projeto que desenvolvi para o meu portfólio é uma reinterpretação do site da Nike, adaptado e personalizado para refletir minha própria visão e habilidades.</p>
+                    <p class="paragrafo2-nike">Utilizando <b>HTML, CSS e JavaScript</b>, criei um ambiente dinâmico e interativo, incorporando elementos como um carrossel para destacar produtos e conteúdo. Ao invés de uma simples imitação, foquei em capturar a essência da marca Nike enquanto adicionava minha própria criatividade e estilo único.</p>
+                    <a href="https://brenodacruz.github.io/Clone-Nk/" target="_blank"><button class="button acessar">Acessar Site</button></a>
+                </section>
+
+                <section class="card">
+                    <div class="card-img"><img src="imagem/thenews.png" alt="" class="img-portfolio"></div>
+                    <h2 class="tituloroxo site-news">Site The News</h2>
+                    <p class="paragrafo1-news">Meu projeto consiste em um site de entrada para The News, uma plataforma inicial para os usuários antes de serem direcionados para outro site. Essa abordagem oferece uma experiência de entrada dinâmica e informativa.</p>
+                    <p class="paragrafo2-news">Feito utilizando <b>HTML, CSS e JavaScript</b>, este projeto não apenas oferece uma interface funcional, mas também proporciona uma experiência marcante que deixará uma primeira impressão duradoura nos visitantes.</p>
+                    <p class="paragrafo3-news">Combinando tecnologia e criatividade!</p>
+                    <a href="https://brenodacruz.github.io/Inicio-TheNews/" target="_blank"><button class="button">Acessar Site</button></a>
+                </section>
+
+                <section class="card">
+                    <div class="card-img"><img src="imagem/calculadora.jpg" alt="" class="img-portfolio"></div>
+                    <h2 class="tituloroxo calculadora">Calculadora</h2>
+                    <p class="paragrafo1-calc">Minha calculadora interativa é uma criação única desenvolvida exclusivamente para o meu portfólio. Totalmente concebida em <b>HTML, CSS e JavaScript</b>, esta calculadora oferece uma experiência de usuário intuitiva, onde você pode realizar cálculos apenas com cliques.</p>
+                    <p class="paragrafo2-calc">Com um design singular, esta calculadora combina funcionalidade e estética, demonstrando minha habilidade em criar interfaces interativas e atraentes.
+                    </p>
+                    <p class="paragrafo3-calc">Experiência única!</p>
+                    <a href="https://brenodacruz.github.io/Calculadora/" target="_blank"><button class="button">Acessar Site</button></a>
+                </section>
+
+                <section class="card">
+                    <div class="card-img"><img src="imagem/android.png" alt="" class="img-portfolio"></div>
+                    <h2 class="tituloroxo android">Projeto Android</h2>
+                    <p class="paragrafo1-android">Meu projeto Android é uma jornada pela evolução do icônico mascote do sistema operacional. Desenvolvido como parte do meu portfólio, este projeto combina <b>HTML, CSS e JavaScript</b> apresentar a evolução do mascote!
+                    <p class="paragrafo2-android">Além disso, inclui um player de vídeo do YouTube que exibe essa evolução de forma dinâmica, oferecendo uma experiência visual completa. Com um ícone no canto da tela, os usuários podem ser direcionados para o site oficial do Android para obter mais informações.</p>
+                    <a href="https://brenodacruz.github.io/projeto-android/" target="_blank"><button class="button">Acessar Site</button></a>
+                </section>
+            </div>
+
+        </div>
+
+        <div class="habilidade tituloroxo" id="habilidadepage">
+            <h1 class="titulo skills">Habilidades</h1>
+            <section class="tecnologias">
+                <div class="desenvolvimento-web">
+                    <h2 class="esconder t1">Tecnologias usadas para desenvolvimento web:</h2>
+                    <div class="img-container esconder">
+                        <img src="imagem/html5.png" alt="" class="img-habilidade">
+                        <img src="imagem/css5.webp" alt="" class="img-habilidade">
+                        <img src="imagem/js.png" alt="" class="img-habilidade js">
+                    </div>
+                    <div class="aparecer">
+                        <h2 class="t3">Desenvolvimento Web:</h2>
+                        <p class="paragrafo1-desenvolvimento">O desenvolvimento web é a área na qual possuo mais conhecimento e experiência. Ao longo da minha jornada profissional, concentrei meus esforços em aprimorar minhas habilidades e explorar os diversos aspectos desse campo dinâmico.</p>
+                        <p class="paragrafo2-desenvolvimento">Utilizando uma combinação habilidosa de <b>Html, Css e JavaScript</b>, sou capaz de criar uma ampla variedade de projetos web, desde páginas de destino simples até plataformas interativas mais complexas. Independentemente das necessidades do cliente - seja para estabelecer uma presença online marcante, fornecer informações através de um portal de notícias, ou até mesmo desenvolver um jogo online - estou preparado para enfrentar os desafios com criatividade e expertise técnica.</p>
+                        <p class="paragrafo3-desenvolvimento">Contudo, mais do que simplesmente produzir um produto final, priorizo a experiência do usuário em cada etapa do processo de desenvolvimento. Reconheço que a qualidade e a usabilidade de um site desempenham um papel fundamental na retenção dos visitantes e, por conseguinte, no sucesso do projeto como um todo.</p>
+                        <p class="paragrafo4-desenvolvimento">Portanto, ao ingressar no desenvolvimento web, comprometo-me não apenas a criar interfaces visualmente atraentes, mas também a garantir que cada interação seja intuitiva e gratificante para o usuário final. Essa abordagem centrada no usuário não apenas diferencia meus projetos, mas também os torna memoráveis e impactantes.</p>
+                        
+                    </div>
+                </div>
+                <div class="linguagens">
+                    <h2 class="esconder2 t2">Linguagens de programação com conhecimento básico:</h2>
+                    <div class="img-container esconder2">
+                        <img src="imagem/python.webp" alt="" class="img-habilidade">
+                        <img src="imagem/c++.png" alt="" class="img-habilidade">
+                    </div>
+                    <div class="aparecer2">
+                        <h2 class="t4">Linguagens de Programação:</h2>
+                        <p class="paragrafo1-linguagens">No vasto campo das linguagens de programação, tenho familiaridade com <b>Python e C++</b>, tendo explorado suas funcionalidades básicas e realizado projetos, incluindo o desenvolvimento de APIs.</p>
+                        <p class="paragrafo2-linguagens">Em Python, tenho apreciado sua sintaxe intuitiva e sua capacidade de simplificar tarefas complexas. Embora meu domínio seja básico, consegui aplicá-lo em projetos pequenos, aproveitando suas estruturas de dados e operadores para resolver problemas simples de forma eficiente.</p>
+                        <p class="paragrafo3-linguagens">Por sua vez, com o C++, mergulhei em um mundo mais robusto, explorando seu potencial para o desenvolvimento de aplicativos de maior desempenho e sistemas de baixo nível. Mesmo que meu conhecimento seja fundamental, tenho trabalhado em projetos que me permitiram entender os princípios de gerenciamento de memória e a importância da otimização de código.</p>
+                        <p class="paragrafo4-linguagens">Embora ainda esteja construindo minha base de habilidades nessas linguagens, estou comprometido em continuar aprendendo e expandindo meu conhecimento. Reconheço a importância de adaptar minha abordagem conforme minha proficiência aumenta, procurando sempre aplicar as melhores práticas de programação em meus projetos futuros.</p>
+                        <p class="paragrafo5-linguagens">Assim, enquanto continuo explorando os diferentes aspectos dessas linguagens de programação, estou ansioso para expandir meu domínio para incluir outras tecnologias e linguagens, abrindo novas possibilidades em minha jornada como programador.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="contato" id="contatopage">
+            <h1 class="titulo contato-in">Contato</h1>
+            <div class="container-contato">
+                <a href="https://github.com/brenodacruz" target="_blank"><img src="imagem/git2.png" alt="" class="img-contato"></a>
+                <a href="https://www.linkedin.com/in/breno-henrique-32226a275/" target="_blank"><img src="imagem/linkedin2.png" alt="" class="img-contato"></a>
+                <a href="https://wa.me/31996702929" target="_blank"><img src="imagem/whatsapp.png" alt="" class="img-contato"></a>
+            </div>
+        </div>
+        <div class="seta2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+              </svg>
+        </div>
+
+    </main>
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>

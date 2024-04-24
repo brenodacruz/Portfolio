@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main,
+.container {
+    transition: 0.5s all;
+}
+
+p {
+    font-family: "Noto Sans", sans-serif;
+}
+
+
+/* Cabeçalho */
+
+.breno {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0px 70px;
+
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px black solid;
+    padding: 20px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.945);
+    top: 0px;
+    z-index: 99999999999999;
+    height: 40px;
+
+
+}
+
+.menu-opcoes {
+    display: flex;
+    margin: 0px 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.menu-opcoes:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 8px #4070F4;
+}
+
+.menu-computador ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-right: 70px;
+
+
+
+}
+
+.menu-computador li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*Início*/
+
+.frases-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 180px
+}
+
+.avatar {
+    margin-right: 200px;
+    width: 600px;
+    justify-content: end;
+}
+
+.frases {
+    margin-left: 100px;
+}
+
+.frases h1 {
+    font-size: 50px;
+}
+
+.frases h2 {
+    font-size: 30px;
+}
+
+.digitador {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.frases>section>span {
+    position: relative;
+}
+
+.frases>section>span::before {
+    content: "";
+    color: #99AAFC;
+    animation: escrever 8s infinite;
+}
+
+.frases>section>span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #99AAFC;
+    right: -10px;
+    opacity: 1;
+    animation: cursor .6s infinite, digitar 20s steps(15) infinite;
+    width: calc(100% + 10px);
+    background-color: white;
+    transition: 0.5s all;
+}
+
+@keyframes digitar {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 10px);
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid white;
+    }
+}
+
+@keyframes escrever {
+
+    0%,
+    50% {
+        content: "Front-End";
+    }
+
+    51%,
+    100% {
+        content: "Júnior";
+    }
+}
+
+
+/*Sobre Mim*/
+
+.about {
+    background-color: #99AAFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 100px 250px;
+    margin-top: 200px;
+    height: 100%;
+}
+
+.foto {
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: rgba(0, 0, 0, 0.918);
+
+
+}
+
+
+
+.tec {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.tecnologias {
+    width: 300px;
+    margin: 10px;
+}
+
+
+/*Portfólio*/
+
+.img-portfolio {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+    background-color: #3556FB;
+    border-radius: 30px 30px 0px 30px;
+    padding: 10px 0px;
+
+
+}
+
+.card-img::before,
+.card-img::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #3556FB;
+    right: 0;
+    bottom: -40px;
+}
+
+.card-img::after {
+    border-radius: 0px 25px 0px 0px;
+    background-color: whitesmoke;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.titulo {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: whitesmoke;
+    width: 400px;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px black;
+
+
+
+}
+
+.card:hover {
+    box-shadow: 0px 0px 20px 0px #1d3192;
+}
+
+.card p {
+    margin: 0px 20px;
+    color: #707070;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #265DF2;
+}
+
+.portfolio h1 {
+    margin: 30px 0px;
+    font-size: 50px;
+}
+
+
+/*Habilidades*/
+
+.habilidade {
+    background-color: #99AAFC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    margin-top: 200px;
+    height: 100%;
+}
+
+.img-habilidade {
+    height: 200px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.desenvolvimento-web,
+.linguagens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+    padding-top: 20px;
+    border-radius: 50px;
+    margin: 10px;
+    height: 300px;
+    transition: 0.5s all;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    column-gap: 100px;
+    margin: 30px;
+}
+
+.js {
+    border-radius: 20px;
+}
+
+.esconder {
+    transition: 0.5s all;
+}
+
+.aparecer {
+    display: none;
+    position: relative;
+
+    transition: 0.5s all;
+    padding: 0px calc(10% - 50px);
+    justify-content: center;
+
+}
+
+.aparecer2 {
+    display: none;
+    position: relative;
+    transition: 0.5s all;
+    padding: 0px 50px;
+    font-size: 15px;
+}
+
+
+.desenvolvimento-web:hover {
+    background-color: rgb(216, 216, 216);
+
+    .esconder {
+        display: none;
+    }
+
+    .aparecer {
+        display: inline-block;
+    }
+}
+
+.linguagens:hover {
+    background-color: rgb(216, 216, 216);
+
+    .esconder2 {
+        display: none;
+    }
+
+    .aparecer2 {
+        display: inline-block;
+    }
+}
+
+/*Contato*/
+
+.contato {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+
+}
+
+.img-contato {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.container-contato>a {
+    border-radius: 50%;
+}
+
+.img-contato:hover {
+    box-shadow: 0px 0px 5px 1px #3556FB;
+}
+
+.container-contato {
+    display: flex;
+    flex-direction: row;
+    column-gap: 70px;
+}
+
+
+
+/*Modo Escuro*/
+
+.botao {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+
+    margin: 0px 30px;
+}
+
+
+.botao>#sol {
+    font-size: 50px;
+    position: relative;
+    transition: 0.2s all;
+
+
+
+}
+
+.botao>#lua {
+    font-size: 20px;
+    position: relative;
+    transition: 0.2s all;
+    top: -20px;
+    margin: 5px;
+
+
+}
+
+.botaodark>#sol {
+    font-size: 30px;
+    color: white;
+
+}
+
+.botaodark>#lua {
+    font-size: 30px;
+    color: white;
+    top: -7px;
+}
+
+.dark {
+    background-color: #181A1B;
+    color: white;
+
+}
+
+.container.escuro {
+    background-color: #181a1bee !important;
+
+}
+
+.menu-opcoes.escuro,
+.breno.escuro {
+    color: white !important;
+}
+
+.mudando {
+    color: #265DF2;
+}
+
+.mudar::after {
+    background-color: #181A1B !important;
+}
+
+.titulo-dark {
+    color: black !important;
+}
+
+
+/*Idioma*/
+
+.idioma {
+    cursor: pointer;
+    position: relative;
+    display: inline;
+    transition: 0.2s all;
+    margin: 0px 10px;
+
+}
+
+.idioma>#brasil {
+    width: 30px;
+    position: relative;
+    transition: 0.2s all;
+}
+
+.idioma>#eua {
+    width: 20px;
+    position: relative;
+    transition: 0.2s all;
+    top: -15px;
+    margin: 5px;
+
+
+
+}
+
+.en>#brasil {
+    width: 20px;
+    top: -5px;
+}
+
+.en>#eua {
+    width: 30px;
+    top: -5px;
+}
+
+.alteradores {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0px;
+}
+
+.escondido {
+    display: none;
+}
+
+.menu-mobile,
+.btn-abrir,
+.seta1, .seta2 {
+    display: none;
+    
+}
+
+@media screen and (max-width: 1569px) {
+    .aparecido {
+        display: none;
+    }
+
+    .escondido {
+        display: inline;
+    }
+
+    .projetos {
+        width: calc(70% - 10px);
+        flex-wrap: wrap;
+
+    }
+
+    .aparecer {
+        font-size: 0.8em;
+    }
+
+    .aparecer2 {
+        font-size: 0.8em;
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .frases h1 {
+        font-size: 40px;
+    }
+
+    .frases h2 {
+        font-size: 25px;
+    }
+
+    .avatar {
+        margin-right: 100px;
+    }
+
+    .img-habilidade {
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 1216px) {
+    .avatar {
+        width: 400px;
+        margin-right: 100px;
+    }
+
+    .menu-computador li {
+        font-size: 13px;
+    }
+
+    .breno {
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #inicio, #sobre, #portfolio, #habilidade, .alternadores {
+        display: none;
+    }
+
+    
+
+    .btn-abrir {
+        display: none;
+        margin-right: 40px;
+    }
+
+    .abrir-menu {
+        display: none;
+    }
+
+    .frases-inicio {
+        height: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .frases {
+        z-index: 2;
+    }
+
+    .avatar {
+        position: absolute;
+        margin: auto;
+        opacity: 0.09;
+
+    }
+
+    .frases h1 {
+        font-size: 60px;
+    }
+
+    .frases h2 {
+        font-size: 30px;
+    }
+
+    .seta1 {
+        display: flex;
+        position: relative;
+        bottom: -250px;
+        color: #99AAFC;
+
+
+    }
+
+    /*Sobre Mim*/
+
+    .about {
+        padding: 100px 30px;
+
+    }
+
+    .foto {
+        width: 200px;
+
+    }
+
+    /*Habilidades*/
+
+    .img-habilidade {
+        height: 100px;
+    }
+
+
+    .img-container {
+
+        column-gap: 40px;
+
+    }
+
+    .aparecer {
+        display: none;
+
+    }
+
+    .aparecer2 {
+        display: none;
+
+    }
+
+    .linguagens {
+        font-size: 14px;
+    }
+
+    .desenvolvimento-web:hover {
+        background-color: rgb(216, 216, 216);
+
+        .aparecer {
+            display: none;
+        }
+
+        .esconder {
+            display: flex;
+        }
+    }
+
+    .linguagens:hover {
+        background-color: rgb(216, 216, 216);
+
+        .aparecer2 {
+            display: none;
+        }
+
+        .esconder2 {
+            display: flex;
+        }
+
+    }
+
+    /*Contato*/
+
+    .img-contato {
+        width: 90px;
+        border-radius: 50%;
+    }
+
+    .seta2 {
+        display: flex;
+        justify-content: center;
+        color: #3f3f3f;
+        
+    
+       
+
+    }
+    
+    .menu-opcoes{
+        margin: 0px;
+    }
+
+    main{
+        padding-bottom: 10px;
+    }
+
+}
