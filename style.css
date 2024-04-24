@@ -759,7 +759,7 @@ p {
     }
 
     .linguagens {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .desenvolvimento-web:hover {
@@ -823,8 +823,8 @@ p {
         column-gap: 40px;
     }
 
-    #contato{
-        margin-left: 10px;
+    .botao{
+        margin: 0px 20px;
     }
 
 }
