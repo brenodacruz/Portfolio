@@ -822,4 +822,9 @@ p {
     .container-contato{
         column-gap: 40px;
     }
+
+    #contato{
+        margin-left: 10px;
+    }
+
 }
