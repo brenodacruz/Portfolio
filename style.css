@@ -458,7 +458,7 @@ p {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 98%;
+    width: 95%;
     padding: 100px 0px;
 
 }
@@ -717,7 +717,7 @@ p {
     .seta1 {
         display: flex;
         position: relative;
-        bottom: -250px;
+        bottom: -150px;
         color: #99AAFC;
 
 
@@ -819,5 +819,7 @@ p {
     .menu-computador ul {
         margin-right: 30px;
     }
-    
+    .container-contato{
+        column-gap: 40px;
+    }
 }
