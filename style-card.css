@@ -1,0 +1,86 @@
+
+.container-card{
+    height: 500px;
+    width: 350px;
+    perspective: 800px;
+    
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style:  preserve-3d;
+}
+
+.container-card:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+}
+
+.front,
+.back{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px black;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-calc{
+    background-image: url(imagem/calculadora.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-nike{
+    background-image: url(imagem/nike.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-android{
+    background-image: url(imagem/and.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.front-thenews{
+    background-image: url(imagem/thenews.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back{
+    background-color: rgb(51, 51, 51);
+    transform: rotateY(180deg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-portfolio{
+    color: #4070F4;
+    font-size: 30px;
+}
+
+
+
+.card p {
+    margin: 0px 20px;
+    color: white;
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 10px;
+}

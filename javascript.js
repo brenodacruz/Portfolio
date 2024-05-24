@@ -2,7 +2,6 @@ let main = document.querySelector('main')
 let cabecalho = document.querySelector('.container')
 let menu = document.querySelectorAll('.menu-opcoes')
 let digitar = document.querySelector('.digitar')
-let tituloroxo = document.querySelectorAll('.tituloroxo')
 let botao = document.querySelector('.botao')
 let container = document.querySelector('.desenvolvimento-web')
 let linguagens = document.querySelector('.linguagens')
@@ -28,9 +27,6 @@ function mudarmodo(){
         item.classList.toggle('escuro')
     })
 
-    tituloroxo.forEach(function(item) {
-        item.classList.toggle('titulo-dark')
-    })
 }
 
 function mudaridioma(){
@@ -55,24 +51,24 @@ function mudaridioma(){
     let p2s = document.querySelector('.paragrafo2-sobre')
     
     //Portfólio
+    let calculadora = document.querySelector('.calculadora')
+    let p1c = document.querySelector('.paragrafo1-calc')
+    let p2c = document.querySelector('.paragrafo2-calc')
+    
+
     let nike = document.querySelector('.site-nike')
     let p1n = document.querySelector('.paragrafo1-nike')
     let p2n = document.querySelector('.paragrafo2-nike')
     
+    let android = document.querySelector('.android')
+    let p1a = document.querySelector('.paragrafo1-android')
+    let p2a = document.querySelector('.paragrafo2-android')
+
     let news = document.querySelector('.site-news')
     let p1t = document.querySelector('.paragrafo1-news')
     let p2t = document.querySelector('.paragrafo2-news')
     let p3t = document.querySelector('.paragrafo3-news')
-    
-    let calculadora = document.querySelector('.calculadora')
-    let p1c = document.querySelector('.paragrafo1-calc')
-    let p2c = document.querySelector('.paragrafo2-calc')
-    let p3c = document.querySelector('.paragrafo3-calc')
-    
-    let android = document.querySelector('.android')
-    let p1a = document.querySelector('.paragrafo1-android')
-    let p2a = document.querySelector('.paragrafo2-android')
-    
+
     let button = document.querySelectorAll('.button')
     
     //Habilidades
@@ -128,7 +124,7 @@ function mudaridioma(){
         calculadora.textContent = "Calculator"
         p1c.textContent = "My interactive calculator is a unique creation developed exclusively for my portfolio. Entirely designed in HTML, CSS and JavaScript, this calculator offers an intuitive user experience, where you can perform calculations with just a few clicks."
         p2c.textContent = "With a unique design, this calculator combines functionality and aesthetics, demonstrating my ability to create interactive and attractive interfaces."
-        p3c.textContent = "Unique experience!"
+        
 
         android.textContent = "Android Project"
         p1a.textContent = "My Android project is a journey through the evolution of the operating system's iconic mascot. Developed as part of my portfolio, this project combines HTML, CSS and JavaScript to present the evolution of the mascot!"
@@ -190,7 +186,7 @@ function mudaridioma(){
         calculadora.textContent = "Calculadora"
         p1c.textContent = "Minha calculadora interativa é uma criação única desenvolvida exclusivamente para o meu portfólio. Totalmente concebida em HTML, CSS e JavaScript, esta calculadora oferece uma experiência de usuário intuitiva, onde você pode realizar cálculos apenas com cliques."
         p2c.textContent = "Com um design singular, esta calculadora combina funcionalidade e estética, demonstrando minha habilidade em criar interfaces interativas e atraentes."
-        p3c.textContent = "Experiência única!"
+        
         
         android.textContent = "Projeto Android"
         p1a.textContent = "Meu projeto Android é uma jornada pela evolução do icônico mascote do sistema operacional. Desenvolvido como parte do meu portfólio, este projeto combina HTML, CSS e JavaScript apresentar a evolução do mascote!"
