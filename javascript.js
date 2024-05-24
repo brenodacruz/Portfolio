@@ -8,6 +8,7 @@ let linguagens = document.querySelector('.linguagens')
 let breno = document.querySelector('.breno')
 let aparecer = document.querySelector('.aparecer')
 let aparecer2 = document.querySelector('.aparecer2')
+let tituloroxo = document.querySelectorAll('.tituloroxo')
 
 let idioma = document.querySelector('.idioma')
 
@@ -27,6 +28,9 @@ function mudarmodo(){
         item.classList.toggle('escuro')
     })
 
+    tituloroxo.forEach(function(item) {
+        item.classList.toggle('titulo-dark')
+    })
 }
 
 function mudaridioma(){

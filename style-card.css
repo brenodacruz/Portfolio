@@ -1,8 +1,10 @@
 
 .container-card{
     height: 500px;
-    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
     perspective: 800px;
+    
     
 }
 
@@ -12,6 +14,8 @@
     position: relative;
     transition: transform 1500ms;
     transform-style:  preserve-3d;
+    
+    
 }
 
 .container-card:hover > .card{
@@ -28,6 +32,8 @@
     box-shadow: 0 0 5px 2px black;
     position: absolute;
     backface-visibility: hidden;
+    user-select: none;
+    
 }
 
 .front-calc{
@@ -66,6 +72,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .titulo-portfolio{
@@ -83,4 +90,15 @@
 
 .card h2 {
     margin-top: 10px;
+}
+
+
+@media screen and (max-width: 1102px) {
+    .mostrar{
+        transform: rotateY(180deg);
+    }
+    
+    .voltar{
+        transform: rotateY(0deg);
+    }
 }
