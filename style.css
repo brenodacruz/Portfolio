@@ -225,11 +225,6 @@ p {
 }
 
 
-.tecnologias {
-    width: 300px;
-    margin: 10px;
-}
-
 
 /*Portfólio*/
 
@@ -296,48 +291,27 @@ p {
 
 .img-habilidade {
     height: 200px;
-}
-
-.tecnologias {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.desenvolvimento-web,
-.linguagens {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: white;
-    width: 80vw;
-    padding-top: 20px;
-    border-radius: 50px;
-    margin: 10px;
-    height: 300px;
-    transition: 0.5s all;
+    margin-right: 50px;
 }
 
 .img-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    column-gap: 100px;
-    margin: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.col1{
+    grid-row: 1;
+}
+.col2{
+    grid-row: 2;
 }
 
 .js {
     border-radius: 20px;
-}
-
-.esconder {
-    transition: 0.5s all;
 }
 
 .aparecer {
@@ -356,31 +330,6 @@ p {
     transition: 0.5s all;
     padding: 0px 50px;
     font-size: 15px;
-}
-
-
-.desenvolvimento-web:hover {
-    background-color: rgb(216, 216, 216);
-
-    .esconder {
-        display: none;
-    }
-
-    .aparecer {
-        display: inline-block;
-    }
-}
-
-.linguagens:hover {
-    background-color: rgb(216, 216, 216);
-
-    .esconder2 {
-        display: none;
-    }
-
-    .aparecer2 {
-        display: inline-block;
-    }
 }
 
 /*Contato*/
@@ -691,35 +640,6 @@ p {
 
     .aparecer2 {
         display: none;
-
-    }
-
-    .linguagens {
-        font-size: 10px;
-    }
-
-    .desenvolvimento-web:hover {
-        background-color: rgb(216, 216, 216);
-
-        .aparecer {
-            display: none;
-        }
-
-        .esconder {
-            display: flex;
-        }
-    }
-
-    .linguagens:hover {
-        background-color: rgb(216, 216, 216);
-
-        .aparecer2 {
-            display: none;
-        }
-
-        .esconder2 {
-            display: flex;
-        }
 
     }
 
