@@ -350,6 +350,8 @@ p {
     width: 200px;
     border-radius: 50%;
     transition: all .3s ease;
+    background-color: white;
+    border: 2px solid white;
 }
 
 .container-contato>a {
