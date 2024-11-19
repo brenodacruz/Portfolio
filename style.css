@@ -309,6 +309,9 @@ p {
 .col2{
     grid-row: 2;
 }
+.col3{
+    grid-row: 3;
+}
 
 .js {
     border-radius: 20px;

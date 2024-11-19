@@ -125,9 +125,9 @@ function mudaridioma(){
         p2t.textContent = "Made using HTML, CSS and JavaScript, this project not only offers a functional interface, but also provides a remarkable experience that will leave a lasting first impression on visitors who access it."
         p3t.textContent = "Combining technology and creativity!"
 
-        calculadora.textContent = "Calculator"
-        p1c.textContent = "My interactive calculator is a unique creation developed exclusively for my portfolio. Entirely designed in HTML, CSS and JavaScript, this calculator offers an intuitive user experience, where you can perform calculations with just a few clicks."
-        p2c.textContent = "With a unique design, this calculator combines functionality and aesthetics, demonstrating my ability to create interactive and attractive interfaces."
+        calculadora.textContent = "TeleAgua"
+        p1c.textContent = "The TeleAgua Project was developed to meet a real need for a company selling gallons of water. Using React.js, Tailwind CSS, MySQL, JavaScript, HTML and Electron technologies, I created an application that includes features such as customer registration, product registration and order management. The solution allows the sending of a note with order details, customer address and payment method, facilitating delivery by the motorcycle courier."
+        
         
 
         android.textContent = "Android Project"
@@ -187,9 +187,9 @@ function mudaridioma(){
         p2t.textContent = "Feito utilizando HTML, CSS e JavaScript, este projeto não apenas oferece uma interface funcional, mas também proporciona uma experiência marcante que deixará uma primeira impressão duradoura nos visitantes."
         p3t.textContent = "Combinando tecnologia e criatividade!"
         
-        calculadora.textContent = "Calculadora"
-        p1c.textContent = "Minha calculadora interativa é uma criação única desenvolvida exclusivamente para o meu portfólio. Totalmente concebida em HTML, CSS e JavaScript, esta calculadora oferece uma experiência de usuário intuitiva, onde você pode realizar cálculos apenas com cliques."
-        p2c.textContent = "Com um design singular, esta calculadora combina funcionalidade e estética, demonstrando minha habilidade em criar interfaces interativas e atraentes."
+        calculadora.textContent = "TeleAgua"
+        p1c.textContent = "O Projeto TeleÁgua foi desenvolvido para atender a uma necessidade real de uma empresa de vendas de galões de água. Utilizando as tecnologias React.js, Tailwind CSS, MySQL, JavaScript, HTML e Electron, criei uma aplicação que inclui funcionalidades como cadastro de clientes, cadastro de produtos e a gestão de pedidos. A solução permite a emissão de uma nota com detalhes do pedido, endereço do cliente e forma de pagamento, facilitando a entrega pelo motoboy."
+       
         
         
         android.textContent = "Projeto Android"
