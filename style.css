@@ -541,6 +541,7 @@ p {
 
     .img-habilidade {
         height: 150px;
+        margin-right: 10px;
     }
 
 }
@@ -629,12 +630,13 @@ p {
 
     .img-habilidade {
         height: 60px;
+        margin-right: 0px;
     }
 
 
     .img-container {
-
-        column-gap: 40px;
+        row-gap: 10px;
+        grid-template-rows: 1fr 2fr;
 
     }
 
